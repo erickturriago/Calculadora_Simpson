@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+   
+   <title>Calculadora Simpson</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora Simpson</h1>
+        
+    </header>
+
+    <section>
+
+        <div class="contenedor">
+            <div id="expresion">
+                <p>Ingrese la función</p>
+                <input type="text" id="expr">
+                <div id="pretty"></div>
+            </div>
+            <div class="parametros">
+                
+                <div>
+                    <p>Valor de a</p>
+                    <input required type="number" id="valorA"/>
+                </div>
+                <div>
+                    <p>Valor de b</p>
+                    <input required type="number" id="valorB"/>
+                </div>
+                <div>
+                    <p>Valor de n</p>
+                    <input required type="number" id="valorN"/>
+                </div>
+            </div>
+    </section>
+
+    <section>
+
+        <div class="btnInicial">
+            <button type="button" class="btn btnCalcular btn-primary">Calcular</button>
+            <button type="button" class="btn btnBorrar btn-danger">Borrar</button>
+        </div>
+        <div class="contenedor_tabla">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col ">n</th>
+                        <th scope="col ">Xn</th>
+                        <th scope="col ">f(Xn)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_body">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="btnFinal">
+            <button type="button" class="btn btnBorrar btn-danger">Borrar</button>
+        </div>
+            
+
+    </section>
+            
+
+        </div>
+    
+
+
+
+</body>
+<script src="app.js"></script>
+
+<script src="https://unpkg.com/mathjs@11.0.1/lib/browser/math.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script src="transformar.js"></script>
+
+</html>

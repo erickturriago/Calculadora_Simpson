@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+section{
+    padding:20px;
+}
+
+#expresion {
+    display: block;
+    align-items: center;
+}
+
+#expresion div{
+    margin:20px;
+}
+
+.parametros div{
+    display: block;
+}
+
+.parametros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor p{
+    font-size: 20px;
+}
+
+button{
+    margin: 5px;
+}
+
+.contenedor_tabla{
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contenedor{
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.contenedor_tabla table{
+    text-align: center;
+}
+
+.btnFinal{
+    display: flex;
+    justify-content: right;
+
+}
